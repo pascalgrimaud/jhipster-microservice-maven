@@ -39,7 +39,7 @@ spring:
     jpa:
         database-platform: com.mycompany.myapp.domain.util.FixedH2Dialect
         database: H2
-        show_sql: true
+        show-sql: true
         properties:
             hibernate.cache.use_second_level_cache: true
             hibernate.cache.use_query_cache: false
@@ -56,6 +56,8 @@ spring:
         cache-seconds: 1
     thymeleaf:
         cache: false
+    profiles:
+        include: swagger # automatically set the 'swagger' profile
 
 liquibase:
     contexts: dev
@@ -103,5 +105,3 @@ jhipster:
         spectator-metrics: # Reports Spectator Circuit Breaker metrics in the logs
             enabled: false
             # edit spring.metrics.export.delay-millis to set report frequency
-    swagger: # swagger is enabled. It can be disabled by pasing 'no-swagger' profile at run time as well
-        enabled: true

@@ -24,6 +24,9 @@
     "nativeLanguage": "en",
     "languages": [
       "en"
-    ]
+    ],
+    "clusteredHttpSession": "no",
+    "websocket": "no",
+    "enableSocialSignIn": false
   }
 }

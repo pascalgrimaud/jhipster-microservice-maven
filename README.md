@@ -15,7 +15,7 @@ To optimize the msmaven client for production, run:
 
 To ensure everything worked, run:
 
-    java -jar target/*.war --spring.profiles.active=prod
+    java -jar target/*.war
 
 ## Continuous Integration
 

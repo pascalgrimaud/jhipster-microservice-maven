@@ -238,8 +238,6 @@ public class JHipsterProperties {
 
         private String licenseUrl;
 
-        private Boolean enabled;
-
         public String getTitle() {
             return title;
         }
@@ -310,14 +308,6 @@ public class JHipsterProperties {
 
         public void setLicenseUrl(String licenseUrl) {
             this.licenseUrl = licenseUrl;
-        }
-
-        public Boolean isEnabled() {
-            return enabled;
-        }
-
-        public void setEnabled(Boolean enabled) {
-            this.enabled = enabled;
         }
     }
 
@@ -501,7 +491,7 @@ public class JHipsterProperties {
         private final SpectatorMetrics spectatorMetrics = new SpectatorMetrics();
 
         public SpectatorMetrics getSpectatorMetrics() { return spectatorMetrics; }
-        
+
         public static class SpectatorMetrics {
 
             private boolean enabled = false;
@@ -512,6 +502,7 @@ public class JHipsterProperties {
         }
     }
 
+
     public static class Ribbon {
 
         private String[] displayOnActiveProfiles;
@@ -519,10 +510,9 @@ public class JHipsterProperties {
         public String[] getDisplayOnActiveProfiles() {
             return displayOnActiveProfiles;
         }
-        
+
         public void setDisplayOnActiveProfiles(String[] displayOnActiveProfiles) {
             this.displayOnActiveProfiles = displayOnActiveProfiles;
         }
-    }  
-
+    }
 }
