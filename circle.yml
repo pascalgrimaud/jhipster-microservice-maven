@@ -1,0 +1,15 @@
+machine:
+    services:
+        - docker
+    java:
+        version: oraclejdk8
+    node:
+        version: 4.5.0
+dependencies:
+    override:
+        - java -version
+test:
+    override:
+        - ./mvnw clean
+        - ./mvnw test
+        - ./mvnw package -Pprod -DskipTests
